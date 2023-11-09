@@ -122,8 +122,10 @@ margin: 0 auto 15px;
 /* Стили для модального окна */
 .modal {
     display: none;
+    /* display: flex; */
     position: fixed;
     z-index: 1;
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -146,5 +148,23 @@ margin: 0 auto 15px;
     color: white;
     cursor: pointer;
   }
+
+  /*-----------------------------------------*/
+  .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
   
 

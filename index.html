@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>My town</title>
-
+    <script src="index.js"></script>
 </head>
 <body>
    <div class="wrapper">
@@ -35,15 +35,21 @@
             <div class="look__photo_5" onclick="openModal('image5')"></div>
             <div class="look__photo_6" onclick="openModal('image6')"></div>
         </div>
-        <!-- Модальное окно -->
-<div id="myModal" class="modal">
+       
+<!-- Модальное окно -->
+<div id="myModal" class="modal" role="button" tabindex="0">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImage">
-  </div>
+    <div class="arrow arrow-left" onclick="switchImage(-1)">&#9664;</div>
+    <div class="arrow arrow-right" onclick="switchImage(1)">&#9654;</div>
+</div>
+
+
+
         <h3>Днепр город мечты</h3>
         <div class="button">Присоединяйтесь</div>
     </div>
    </div>
-   <script src="index.js"></script>
+   
 </body>
 </html>
