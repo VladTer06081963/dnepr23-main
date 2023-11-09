@@ -36,6 +36,13 @@
             <div class="look__photo_6" onclick="openModal('image6')"></div>
         </div>
 
+        <div id="myModal" class="modal" role="button" tabindex="0">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div class="arrow arrow-left" onclick="switchImage(-1)">&#9664;</div>
+            <div class="arrow arrow-right" onclick="switchImage(1)">&#9654;</div>
+        </div>
+
         <h3>Днепр - город мечты</h3>
 
         <div class="button">Присоединяйтесь</div>
